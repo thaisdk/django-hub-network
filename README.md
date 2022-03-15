@@ -6,13 +6,14 @@
 
 ---
 
-![https://github.com/thaisdk/django-hub-network/blob/main/resources/app-base.svg](https://github.com/thaisdk/django-hub-network/blob/main/resources/app-base.svg)
+
 
 ### Database model:
 
+
 ---
 
-[https://drawsql.app/--569/diagrams/hub-network/embed](https://drawsql.app/--569/diagrams/hub-network/embed)
+You can check here: https://drawsql.app/--569/diagrams/hub-network
 
 ### **Tech Stack**
 
