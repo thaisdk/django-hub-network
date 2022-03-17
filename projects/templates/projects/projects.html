@@ -1,19 +1,15 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <h1>All Projects Template</h1>
+    <h1>Best of Hub</h1>
+    <p><strong>Projects featured by our users</strong></p>
 
     <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Beatae, dignissimos! Omnis dolor repudiandae voluptates maxime 
-        nulla cumque accusamus id. Ratione aliquid recusandae sit ipsam 
-        autem voluptatem provident, quod eum. Quidem.
-    </p>
+        <a href="">Search all Hub Projects</a>
+    </p>    
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Reiciendis quisquam a rem dolore perferendis excepturi, 
-        vero voluptates voluptate. Eligendi culpa repellendus laboriosam 
-        illum aliquam magnam. 
-        Reiciendis nisi qui illum magnam!</p>
+    {% for project in projects %}
+        <li><a href="{% url 'project' project.id %}">{{ project.title }}</a> —  {{ project.description }}</li>
+    {% endfor %}
 
 {% endblock content %}
