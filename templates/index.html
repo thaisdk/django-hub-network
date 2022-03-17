@@ -11,9 +11,14 @@
 
     {% block content %}
         
-        <h1>Discover projects</h1>
+        <h1>Recommended projects</h1>
+        <!-- Recommended Projects -->
+        <!-- NOT READY - BASED ON UP VOTES -->
+        {% for project in projects %}
+            <li><a href="/project/{{project.id}}">{{ project.title }}</a> —  {{ project.description }}</li>
+        {% endfor %}
     {% endblock content %}
-
+    <br>
     <footer>created by <a href="https://github.com/thaisdk">Thaís Máximo</a></footer>
 </body>
 </html>
